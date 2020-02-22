@@ -1,0 +1,19 @@
+para consultar um cep
+
+import cep_lib
+
+#chama o objeto
+cep = cep_lib.infos_cep(cep_a_ser_consultado)
+#capturar infos a partir do cep inserido
+cep.capturar_infos()
+#simplesmente exibir as infos mais organizada
+cep.exibir_infos()
+
+para descobrir um cep
+
+import cep_lib
+
+#como nao sabemos o cep passamos nada no parametro do objeto
+cep = cep_lib.infos_cep()
+#aqui ira retorna o cep de acordo com os parametros passados
+cep.descobrir_cep('UF', 'Cidade', 'Longradouro')
